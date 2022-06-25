@@ -9,7 +9,12 @@ For the time being, Mr. X's choice of means of transport should be able to be en
 After each input the possible whereabouts are to be output. Since this is my first own project with graphs I am 
 happy about suggestions for improvement.
 
-# Future goals
+# Goals
+- Model of the game board in the form of graphs
+- Input option for the selected means of transport
+- Output of the possible whereabouts of Mr. X
+
+## Future goals
 - Each field should be given a value to give better predictions of Mr. X's whereabouts.
 - The best path to the last known position of Mr. X should be output (for each detective).
   Possible extension: The detectives are not sent to the last position, but each detective is sent to a different region where Mr. X could be.
