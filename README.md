@@ -1,7 +1,7 @@
 # Scotland-Yard-Simulation
 This program is to model the board game "Scotland Yard" and, by Mr. X's choice of transport, indicate on which squares he can stand.
 
-**This is not meant to be a playable version of this board game but a nice task to get to know graphs better.**
+**This is not meant to be a *playable version* of this board game but a nice task to get to know graphs better.**
 
 # Details
 The game is to be modeled in terms of 3 graphs (each representing a means of transportation). 
