@@ -14,20 +14,34 @@ public class Graph {
     private HashMap<Vertex, List<Vertex>> adjVertice;
     private String name;
 
-    Graph(String name) {
+    public Graph(String name) {
         this.name = name;
     }
 
+    /**
+     * Adds a vertex to the graph
+     * @param id Vertex ID
+     */
     public void addVertex(int id) {
         adjVertice.putIfAbsent(new Vertex(id), new ArrayList<>());
     }
 
+    /**
+     * Removes a vertex from the graph
+     * @param id Vertex ID
+     */
     public void removeVertex(int id) {
         Vertex v = new Vertex(id);
         adjVertice.values().stream().forEach(e -> e.remove(v));
         adjVertice.remove(new Vertex(id));
     }
 
+    /**
+     * Adds an edge between two vertice
+     * @param id1 First vertex
+     * @param id2 Second vertex
+     * @throws InvalidVertex Is thrown by a invalid vertex
+     */
     public void addEdge(int id1, int id2) throws InvalidVertex {
         Vertex v1 = new Vertex(id1);
         Vertex v2 = new Vertex(id2);
@@ -40,6 +54,12 @@ public class Graph {
         adjVertice.get(v2).add(v1);
     }
 
+    /**
+     * Removes an edge between two vertice
+     * @param id1 First vertex
+     * @param id2 Second vertex
+     * @throws InvalidVertex Is thrown by a invalid vertex
+     */
     public void removeEdge(int id1, int id2) throws InvalidVertex {
         Vertex v1 = new Vertex(id1);
         Vertex v2 = new Vertex(id2);
@@ -56,7 +76,10 @@ public class Graph {
         adjVertice.get(v2).remove(v1);
     }
 
-
+    /**
+     * Gets the name of the graph
+     * @return The graph's name
+     */
     public String getName() {
         return this.name;
     }
