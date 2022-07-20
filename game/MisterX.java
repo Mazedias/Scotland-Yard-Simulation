@@ -1,7 +1,5 @@
 package game;
 
-import graph.Vertex;
-
 /**
  * Special {@link Player} MisterX
  * @author Mazedias
