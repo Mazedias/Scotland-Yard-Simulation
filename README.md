@@ -1,16 +1,16 @@
 # Scotland-Yard-Simulation
-This program is to model the board game "Scotland Yard" and, by Mr. X's choice of transport, indicate on which squares he can stand.
+This program is to model the board model.game "Scotland Yard" and, by Mr. X's choice of transport, indicate on which squares he can stand.
 
-**This is not meant to be a *playable version* of this board game but a nice task to get to know graphs better.**
+**This is not meant to be a *playable version* of this board model.game but a nice task to get to know graphs better.**
 
 # Details
-The game is to be modeled in terms of 3 graphs (each representing a means of transportation). 
+The model.game is to be modeled in terms of 3 graphs (each representing a means of transportation). 
 For the time being, Mr. X's choice of means of transport should be able to be entered through a console. 
 After each input the possible whereabouts are to be output. Since this is my first own project with graphs I am 
 happy about suggestions for improvement.
 
 # Goals
-- Model of the game board in the form of graphs
+- Model of the model.game board in the form of graphs
 - Input option for the selected means of transport
 - Output of the possible whereabouts of Mr. X
 

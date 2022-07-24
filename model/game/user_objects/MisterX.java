@@ -1,4 +1,6 @@
-package game;
+package model.game.user_objects;
+
+import model.game.user_objects.Player;
 
 /**
  * Special {@link Player} MisterX

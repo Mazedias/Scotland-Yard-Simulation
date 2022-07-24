@@ -1,4 +1,4 @@
-package game.exceptions;
+package model.exceptions;
 
 public class UnknownCommand extends Exception{
 

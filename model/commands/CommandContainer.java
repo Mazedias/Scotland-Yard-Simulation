@@ -1,9 +1,9 @@
-package game.commands;
+package model.commands;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import game.exceptions.UnknownCommand;
+import model.exceptions.UnknownCommand;
 
 /**
  * This class holds all commands
@@ -22,7 +22,7 @@ public class CommandContainer {
      * @param input User input
      * @throws UnknownCommand Is thrown when the user enters a unregistered command
      */
-    public Command findeCommand(String input) throws UnknownCommand {
+    public Command findCommand(String input) throws UnknownCommand {
         for(Command command : this.commands) {
             if (command.getName().equalsIgnoreCase(input)) {
                 return command;
@@ -47,6 +47,7 @@ public class CommandContainer {
     public void unregisterCommand(Command command) throws UnknownCommand {
         if (this.commands.contains(command)) {
             this.commands.remove(command);
+            return;
         }
         throw new UnknownCommand();
     }

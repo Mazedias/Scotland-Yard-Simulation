@@ -1,4 +1,4 @@
-package game.commands;
+package model.commands;
 
 /**
  * Command framework
@@ -9,7 +9,7 @@ public abstract class Command {
     protected String commandName;
     protected int args;
 
-    public abstract void executeCommand(String[] command);
+    public abstract void executeCommand(String userInput);
     
     public String getName() {
         return this.commandName;

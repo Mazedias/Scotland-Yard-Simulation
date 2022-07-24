@@ -1,4 +1,4 @@
-package graph.exceptions;
+package model.graph.exceptions;
 
 public class InvalidVertex extends Exception {
 
